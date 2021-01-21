@@ -52,10 +52,6 @@ export class OauthController extends Controller {
       throw new BadRequestError('invalid client_id');
     }
 
-    if (!redirectUri || !redirectUri.startsWith(`https://oauth-redirect.googleusercontent.com/r/xumpys-nora}`)) {
-      throw new BadRequestError('invalid redirect_uri');
-    }
-
     if (responseType !== 'code') {
       throw new BadRequestError('response_type must be "code"');
     }
