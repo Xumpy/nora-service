@@ -1,5 +1,5 @@
 import * as crypto from 'crypto';
-import { appTitle, fireBase, jwtSecret, oauthClientId, oauthClientSecret, oauthProjectId } from '../../config';
+import { appTitle, fireBase, jwtSecret, oauthClientId, oauthClientSecret } from '../../config';
 import { JwtService } from '../../services/jwt.service';
 import { UserRepository } from '../../services/user.repository';
 import { Http } from '../decorators/http';
