@@ -52,7 +52,7 @@ export class OauthController extends Controller {
       throw new BadRequestError('invalid client_id');
     }
 
-    if (!redirectUri || !redirectUri.startsWith(`https://oauth-redirect.googleusercontent.com/r/${oauthProjectId}`)) {
+    if (!redirectUri || !redirectUri.startsWith(`https://oauth-redirect.googleusercontent.com/r/xumpys-nora}`)) {
       throw new BadRequestError('invalid redirect_uri');
     }
 
